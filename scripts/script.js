@@ -12,7 +12,7 @@ function heart() {
 }
 copy()
 
-//  copy button  function
+//  Copy button  function
 
 function copy() {
   const copyBtns = document.querySelectorAll('.copyBtn');
@@ -30,7 +30,7 @@ function copy() {
 
 heart();
 
-//call button function
+//Call button function
 
 function call() {
   const callBtns = document.querySelectorAll(".callBtn");
@@ -58,7 +58,7 @@ function call() {
 
 call()
 
-//  clear history button function
+//  Clear history button function
 
 function clear() {
   const clearBtn = document.getElementById('clear-history-btn');
@@ -67,7 +67,8 @@ function clear() {
   })
 }
 clear()
-//  increasing function
+
+//  Increasing function
 function increment(counts) {
   let countNum = parseInt(counts.innerText);
   countNum++
