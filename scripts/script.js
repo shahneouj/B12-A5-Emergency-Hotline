@@ -12,14 +12,14 @@ function heart() {
 }
 copy()
 
-// for the copy function
+//  copy button  function
 
 function copy() {
   const copyBtns = document.querySelectorAll('.copyBtn');
   const copyCount = document.getElementById('copycout');
   for (let copyBtn of copyBtns) {
     copyBtn.addEventListener('click', function () {
-      // navigator.clipboard.write()
+      // get the innerText of the service number of the clicked copy button
       let copyText = copyBtn.parentNode.parentNode.children[1].children[1].children[0].innerText;
       increment(copyCount)
       alert(`The number has been copied ${copyText}`)
@@ -45,7 +45,7 @@ function call() {
       }
       countNum -= 20;
       callCount.innerText = countNum;
-
+      // get the title and service number of the clicked call button
       let subtitle = callBtn.parentNode.parentNode.children[1].children[0].children[1].innerText;
       let serviceNumber = callBtn.parentNode.parentNode.children[1].children[1].children[0].innerText;
       makeElement(subtitle, serviceNumber);
@@ -61,8 +61,12 @@ call()
 //  clear history button function
 
 function clear() {
-
+  const clearBtn = document.getElementById('clear-history-btn');
+  clearBtn.addEventListener('click', function () {
+    document.querySelector('.historis').innerHTML = null;
+  })
 }
+clear()
 //  increasing function
 function increment(counts) {
   let countNum = parseInt(counts.innerText);
@@ -73,7 +77,7 @@ function increment(counts) {
 //  Make the history element
 
 function makeElement(title, number) {
-  const historyContent = document.querySelector('.card2');
+  const historyContent = document.querySelector('.historis');
   let element = `<div class="history-content
            bg-[#FAFAFA] flex justify-between gap-4 items-center p-4 rounded-[8px] mb-2">
             <div class="left">

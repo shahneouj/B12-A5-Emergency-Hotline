@@ -48,7 +48,7 @@
     <section
       class="flex flex-col md:flex-row  md:justify-around w-full mt-[48px] px-4 md:px-[60px] gap-[30px]  bg-[#f5fff6]">
       <div class="grid grid-cols-3  card-container gap-[30px] ">
-
+        <!-- adding cards -->
         <div
           class="card bg-white rounded-2xl  p-8 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] flex flex-col gap-y-6  w-full">
           <div class="icons flex justify-between items-center">
@@ -347,33 +347,15 @@
               <i class="fa-regular scale-150 fa-clock text-2xl mr-2"></i>
               <h3 class="call-history">Call History</h3>
             </div>
-            <div class="flex justify-center items-center  bg-[#00A63E] text-white w-[123px] h-[52px] rounded-[50px] ">
-
-              <span class="copy-clear">Clear</span>
-            </div>
+            <button id="clear-history-btn"
+              class="flex justify-center items-center  bg-[#00A63E] text-white w-[123px] h-[52px] rounded-[50px]  ">
+              Clear
+            </button>
           </div>
           <!-- history contents -->
-          <div class="history-content
-           bg-[#FAFAFA] flex justify-between gap-4 items-center p-4 rounded-[8px] mb-2">
-            <div class="left">
-              <h3 class="history-card-title">Fire Service Number</h3>
-              <p class="card-category">999</p>
-            </div>
-            <div class="right">
-              <p class="card-category">11:36:58 AM</p>
-            </div>
-          </div>
-          <div class="history-content
-           bg-[#FAFAFA] flex justify-between gap-4 items-center p-4 rounded-[8px] mb-2">
-            <div class="left">
-              <h3 class="history-card-title">Fire Service Number</h3>
-              <p class="card-category">999</p>
-            </div>
-            <div class="right">
-              <p class="card-category">11:36:58 AM</p>
-            </div>
-          </div>
+          <div class="historis">
 
+          </div>
         </div>
       </div>
     </section>
